@@ -1,0 +1,1 @@
+# batch_resizing_images
