@@ -24,8 +24,7 @@ print("All images succesfully resized to:\n"+str(resized.shape)+"\n")
 time.sleep(1)
 print("Files saved to:\n"+str(d_path)+"\n")
 time.sleep(1)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+
 
 
 
