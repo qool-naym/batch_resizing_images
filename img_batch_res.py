@@ -1,7 +1,9 @@
-import cv2, glob
+import cv2
+import glob
 import os
 import time
 
+start_time = time.clock()
 m_path = os.path.abspath(".")
 s_path = m_path+"/source_folder/*"
 d_path = m_path+"/destination_folder/"
@@ -19,6 +21,8 @@ for image in glob.glob(s_path):
     print(str(img_count)) 
 
 print("\n")
+print("Processing time:")
+print(time.clock() - start_time, "Seconds"+"\n") 
 time.sleep(1)
 print("All images succesfully resized to:\n"+str(resized.shape)+"\n")
 time.sleep(1)
