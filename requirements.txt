@@ -1,6 +1,6 @@
 opencv-python
 glob2
-argparser
+argparse
 os
 time
 
