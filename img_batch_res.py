@@ -1,14 +1,20 @@
 import cv2
 import glob
+import argparse
 import os
 import time
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-d", "--dimensions", default=512, help="")
+parser.add_argument("-fn", "--filename", default="image-", help="")
+args = parser.parse_args()
 
 start_time = time.clock()
 m_path = os.path.abspath(".")
 s_path = m_path+"/source_folder/*"
 d_path = m_path+"/destination_folder/"
-filename = "image-"
-d_width, d_height = 512, 512 
+filename = str(args.filename)
+d_width = d_height = int(args.dimensions) 
 counter = 0
 
 for image in glob.glob(s_path):
@@ -28,6 +34,7 @@ print("All images succesfully resized to:\n"+str(resized.shape)+"\n")
 time.sleep(1)
 print("Files saved to:\n"+str(d_path)+"\n")
 time.sleep(1)
+
 
 
 
