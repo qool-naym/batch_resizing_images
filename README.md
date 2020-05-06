@@ -13,4 +13,8 @@ The script will output count of images, processing time, resized dimensions and 
 Images will be named like so: ```new_file_name00001```, ```new_file_name00002``` etc., adding 5 digits to the<br/>
 specified file name.<br/>
 Dimensions default to ```512``` and filename defaults to ```image-```.<br/>
-If you need more than five digits open ```resize.py``` and change ```.zfill(5)``` in line 34 to any positive integer.
+If you need more than five digits open ```resize.py``` and change ```.zfill(5)``` in line 34 to any positive integer.<br/>
+<br/>
+### Example:
+
+```$ python3 resize.py -d 256 -fn resized-``` will resize your images to ```256 x 256``` and name them ```resized-00001```<br/> ```resized-00002``` and so on.
