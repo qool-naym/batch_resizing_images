@@ -5,7 +5,7 @@ Short Python script using OpenCV for resizing multiple images. Intentionally to 
 ### What you need to do:
 
 Clone repo, cd to repo directory, pip install requirements (run ```pip install -r requirements.txt``` or <br/>
-```pip3 install -r requirements.txt```on Python 3), cd to repo directory and put all your source images there.<br/>
+```pip3 install -r requirements.txt```on Python 3) and put all your source images there.<br/>
 Inside the repo dir run ```$ python resize.py -d [resized_dimensions] -fn [new_file_name]``` .<br/>
 If you're running on Python 3 run ```$ python3 resize.py -d [resized_dimensions] -fn [new_file_name]``` .<br/>
 
