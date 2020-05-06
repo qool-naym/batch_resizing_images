@@ -4,13 +4,13 @@ Short Python script using OpenCV for resizing multiple images. Intentionally to 
 
 ### What you need to do:
 
-Clone repo, pip install requirements, cd to repo directory and put all your source images there.<br/>
-Inside the repo dir run ```$ python img_batch_res.py -d [resized_dimensions] -fn [new_file_name]``` .<br/>
-If you're running on Python 3 run ```$ python3 img_batch_res.py -d [resized_dimensions] -fn [new_file_name]``` .<br/>
+Clone repo, pip install requirements (run ```pip install -r requirements.txt``` or ```pip3 install -r requirements.txt```<br/>
+on Python 3), cd to repo directory and put all your source images there.<br/>
+Inside the repo dir run ```$ python resize.py -d [resized_dimensions] -fn [new_file_name]``` .<br/>
+If you're running on Python 3 run ```$ python3 resize.py -d [resized_dimensions] -fn [new_file_name]``` .<br/>
 
 The script will output count of images, processing time, resized dimensions and the destination path.<br/>
 Images will be named like so: ```new_file_name00001```, ```new_file_name00002``` etc., adding 5 digits to the<br/>
 specified file name.<br/>
 Dimensions default to ```512``` and filename defaults to ```image-```.<br/>
-If you need more than five digits you can change ```zfill(5)``` in ```img_count = str(counter).zfill(5)```in line 34<br/>
-to any positive integer.
+If you need more than five digits open ```resize.py``` and change ```.zfill(5)``` in line 34 to any positive integer.
