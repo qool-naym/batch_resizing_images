@@ -1,6 +1,6 @@
 # Batch Resizing Images
 
-Short Python script using OpenCV to resize multiple images. Intentionally to be used for preparing lots of squared images for dataset compiling. You can specify and run the script directly in Terminal. Processes JPG and PNG files and outputs JPGs.
+Short Python script using OpenCV to resize multiple images. Intentionally to be used for preparing lots of squared images for compiling datasets. You can specify and run the script directly in Terminal. Processes JPG and PNG files and outputs JPGs.
 
 ### What you need to do:
 
